@@ -9,7 +9,7 @@ const connectDB = async () => {
   try {
     await mongoose.connect(mongoURI, {
       useNewUrlParser: true,
-      useUnifiedTopology: true,
+      // useUnifiedTopology: true,
     });
     console.log(`MongoDB connected (${process.env.NODE_ENV === 'production' ? 'Production' : 'Development'})`);
   } catch (err) {
